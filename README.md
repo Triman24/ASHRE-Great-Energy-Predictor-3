@@ -7,10 +7,14 @@ Data Information:
 • We then took input from test and train files for further processing.
 • As observed there were 16 columns in train data frame with 20216100 rows in train data set.
 • As observed there were 15 columns in train data frame with 41697600 rows in test data set.
+
+
 Data Mining and Cleaning:
 Some Statistics:
 Total rows in train: 20216100
 Total rows in test: 41697600
+
+
 • On our analysis and discussion for given dataset, we have made necessary conversions by multiplying meter_reading (target variable) with 0.2931 for meter = 0
 Referred link for the discussion is:
 https://www.kaggle.com/c/ashrae-energy-prediction/discussion/119261
@@ -25,6 +29,9 @@ across bins.
 year. This gave us consisting pattern across months. We then decided to drop
 column “timestamp”.
 • As observed following columns were having missing values mentioned with their counts and ways to handle in train data frame.
+
+
+
 Name	Count	Method To Handle
 Building_id	0	-
 Meter	0	-
@@ -55,6 +62,8 @@ meter_reading
 
 •	We repeated the above cleaning process on test data to get above feature as a result (except meter_reading).
 •	We divided the train data frame in training features and label namely X and y
+
+
 
 Training Models: 
 We tried following algorithms from our coursework to train the data set. RMSLE was initially calculated by prediction on train data itself. Upon successful result on train we predicted test labels i.e. meter_reading, and submitted them in Kaggle to get final RMSLE
